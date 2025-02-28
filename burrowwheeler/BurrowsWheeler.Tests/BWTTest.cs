@@ -4,14 +4,6 @@ namespace BurrowsWheeler.Tests;
 
 public class Tests
 {
-    private Transformation _transform;
-
-    [SetUp]
-    public void Setup()
-    {
-        _transform = new();
-    }
-
     [TestCase("")] // empty string
     [TestCase("a")]
     [TestCase("banana")]
