@@ -6,6 +6,10 @@
 *.ko
 *.obj
 *.elf
+*bin*
+*obj*
+*v17*
+*.vs*
 
 # Linker output
 *.ilk

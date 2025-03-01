@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurrowsWheeler", "burrowwheeler\BurrowsWheeler.csproj", "{DD10FA27-48C7-47B4-B0A8-DCAF79A41646}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurrowsWheeler.Tests", "BurrowsWheeler.Tests\BurrowsWheeler.Tests.csproj", "{D26A4575-0616-72DB-838A-2344173CD50A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD10FA27-48C7-47B4-B0A8-DCAF79A41646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD10FA27-48C7-47B4-B0A8-DCAF79A41646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD10FA27-48C7-47B4-B0A8-DCAF79A41646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD10FA27-48C7-47B4-B0A8-DCAF79A41646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D26A4575-0616-72DB-838A-2344173CD50A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D26A4575-0616-72DB-838A-2344173CD50A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D26A4575-0616-72DB-838A-2344173CD50A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D26A4575-0616-72DB-838A-2344173CD50A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F569BB2D-83DC-4784-8229-2396B56A18BE}
+	EndGlobalSection
+EndGlobal
