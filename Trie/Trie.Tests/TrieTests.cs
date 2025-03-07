@@ -2,7 +2,7 @@
 
 namespace Trie.Tests;
 
-public class Tests
+public class Tests 
 {
     public string[] testcases = new string[20];
     Trie trie;
@@ -17,7 +17,7 @@ public class Tests
     }
 
     [Test]
-    public void AddTest()
+    public void AddTest()          // Check if adding new returns true
     {
         bool IsPassed = true;
         for (int i = 0; i < 4; i++)
@@ -31,7 +31,7 @@ public class Tests
     }
 
     [Test]
-    public void TwiceAddTest()
+    public void TwiceAddTest()   // check if adding existing returns false
     {
         for (int i = 0; i < 4; i++)
         {
@@ -49,7 +49,7 @@ public class Tests
     }
 
     [Test]
-    public void ContainTest()
+    public void ContainTest() // check if contain(existing) returns true
     {
         for (int i = 0; i < 4; i++)
         {
@@ -66,7 +66,7 @@ public class Tests
         Assert.That(IsPassed);
     }
     [Test]
-    public void PrefixCountTest()
+    public void PrefixCountTest()  // check if words with current prefix counts correctly
     {
         for (int i = 0; i < 4; i++)
         {
@@ -75,7 +75,7 @@ public class Tests
         Assert.That(trie.HowManyStartsWithPrefix("s") == 1 && trie.HowManyStartsWithPrefix("h") == 3);
     }
     [Test]
-    public void RemoveTest()
+    public void RemoveTest()  // check if removing word with same prefix with any other works correctly
     {
         for (int i = 0; i < 4; i++)
         {
@@ -84,7 +84,7 @@ public class Tests
         Assert.That(trie.Remove("he") && trie.HowManyStartsWithPrefix("h") == 2);
     }
     [Test]
-    public void RemoveTest2()
+    public void RemoveTest2()  // check if removing word with unique prefix works correctly
     {
         for (int i = 0; i < 4; i++)
         {
@@ -93,12 +93,12 @@ public class Tests
         Assert.That(trie.Remove("she") && trie.HowManyStartsWithPrefix("s") == 0);
     }
     [Test]
-    public void AllSymbolsTest()
+    public void AllSymbolsTest()  // check if any symbol from a keyboard is in alphabeth
     {
         Assert.That(trie.Add("`1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./~!@#$%^&*()_QWERTYUIOP{}|ASDFGHJKL:\"ZXCVBNM<>?йцукенгшщзхъфывапролджэячсмитьбю.ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ,"));
     }
     [Test]
-    public void RemoveTest3()
+    public void RemoveTest3()  // check if removing one word does not remove another
     {
         for (int i = 0; i < 4; i++)
         {
