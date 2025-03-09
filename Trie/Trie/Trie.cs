@@ -141,7 +141,7 @@ namespace Trie
             }
 
             throw new Exception("Seems to be some data manipulations");     // Luck to catch this exception (it can be catch only if terminal vertex,
-        }                                                                   // which guatanteed to be that by Contain method, will become not terminal, which is impossible)
+        }                                                                   // which guatanteed to be that by Contain method, will become not terminal, which is impossible). In theory, can be catched caused by some actions in another thread
 
         public bool Add(string[] element)  // for adding multiple strings
         {
