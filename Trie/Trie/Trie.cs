@@ -132,7 +132,7 @@ namespace Trie
                 current.size--;                           // decreasing counter (we deleting)
                 current = current.next[element[i]];
             }
-            if (current.isTerminal)                       // So, fimal point
+            if (current.isTerminal)                       // So, final point
             {
                 current.isTerminal = false;             
                 current.size--;
